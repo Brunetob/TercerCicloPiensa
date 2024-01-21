@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: rgb(249, 130, 17);
+}
+header{
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+/* contenedores y menu**/
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+.menu .logo{
+    margin: 10;
+    font-weight: 500;
+    font-size: 30px;
+    color: #0f4504;
+}
+/*Contenido*/
+.header-content{
+    display: flex;
+}
+.content{
+    padding: 150px 150px 0px 0px;
+}
+.content h1{
+    color: rgb(37, 2, 2);
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 55px;
+}
+.content p{
+    margin-top: 25px;
+    color: #c1c4e4;
+    text-transform:unset;
+    font-size: 25px;
+    line-height: 30px;  
+}
+/*botones*/
+.btn-1{
+    display: inline-block;
+    background-color: rgb(170, 177, 255, 0.3);
+    border: 1px solid #1d7418;
+    margin: 35px 10px 0px 0px;
+    padding: 15px 25px;
+    color: #0d0c47;
+    border-radius: 25px;
+}
+.btn-1:hover{
+    background-color: #0f1ba7;
+}
+.btn-2{
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 25px;
+    background-color: #061d6d;
+    color: #ffff;
+}
+
+/*informacion para abajo*/
+.porfolio{
+    display: flex;
+    align-items: center;
+}
+
+.porfolio-2 {
+    text-align: left;
+    margin-right: 10px;    
+}
+.porfolio-2 p{
+    font-size: 15px;
+    color: #e2e2eb;
+    margin-bottom: 25px;
+}
+/*Parte de abajo*/
+footer{
+    padding: 10px 0px 30px 0px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hr{
+    margin: 45px 0px;
+    border: 0.5 solid #0918c1;
+}
+/*Enlaces en la parte de abajo*/
+.enlaces{
+    display: flex;
+    justify-content: center;
+}
+
+/*Parahacer reponsivo*/
+@media( max-width:991px){
+    header{
+        height: 0vh;
+        padding: 400px 0px;
+        background-position: center center;  
+    }
+    .header-content{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0px 30px;
+    }
+    .content{
+        padding: 0px;
+    }
+    .content h1{
+        margin-top: 100px;
+        font-size: 45px;
+    }
+    
+    .header-content img{
+        width: 500px;
+    }
+    
+    .porfolios{
+        padding: 0px 30px 30px 30px;
+    }
+    .porfolios h2{
+        margin-bottom: 15px;
+    }
+    .porfolio{
+        flex-direction: column;
+        background-color: #08620d;
+    }
+    .porfolio-2{
+        text-align: center;
+        margin: 0px 0px 25px 0px;
+    }
+    footer{
+        padding: 0px 0px 30px 30px;
+    }
+    
+    .hr{
+        margin: 25px 0px;
+    }
+    .enlaces{
+        flex-direction: column;
+        align-items: center;
+    }
+}
