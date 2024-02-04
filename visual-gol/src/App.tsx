@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
+import iconoApp from './assets/images/iconoApp.webp';
+import conectando from './assets/images/conectando.png';
+import VisualizarGoles from './pages/VisualizarGoles';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <Router>
+      <div className="container">
+        <div className="section">
+          <h1 className="welcome-text">BIENVENIDOS</h1>
+          <img className="logo" src={iconoApp} alt="Vite logo" />
+          <div className="goal_container">
+            <p className="goal-text">GOL</p>
+            <p className="goal-text">NO GOL?</p>
+          </div>
+          <p className="description-text">
+            Esta aplicación lleva el conteo de los goles anotados en un arco especial para personas con discapacidad visual
+          </p>
+        </div>
+        <div className='bottom'>
+          <img style={{width: '30%'}} src={conectando} alt="conectando" />
+          <button className="begin-button"><Link to="/pages/visualizar-goles">INICIEMOS</Link></button>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <Routes>
+        <Route path="/pages/visualizar-goles" element={<VisualizarGoles />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

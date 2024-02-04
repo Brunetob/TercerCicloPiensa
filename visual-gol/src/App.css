@@ -5,19 +5,6 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -33,10 +20,80 @@
   }
 }
 
-.card {
-  padding: 2em;
+
+/*Mis cambios*/
+body {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
 }
 
-.read-the-docs {
-  color: #888;
+.section {
+  background-color: #f88211;
+}
+
+.container {
+  background-color: #116b38;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.begin-button {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 30%;
+}
+
+.bottom img {
+  width: 100%;
+  max-width: 300px; /* Ajusta según sea necesario */
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transition: filter 300ms;
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+  transition: filter 300ms;
+}
+.container, .bottom, .begin-button {
+  border-radius: 10px;
+}
+
+.goal_container{
+  font-size: 40px;
+}
+
+/* Agrega estas reglas al final de tu archivo App.css */
+@media (max-width: 768px) {
+  .section {
+    font-size: 16px;
+  }
+
+  .goal-text {
+    font-size: 20px;
+  }
+
+  .description-text {
+    font-size: 14px;
+  }
+
+  .begin-button {
+    width: 30%;
+  }
+
+  .bottom img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .goal_container {
+    font-size: 24px;
+  }
 }
