@@ -1,3 +1,4 @@
+//App.tsx
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
 import iconoApp from './assets/images/iconoApp.webp';
 import conectando from './assets/images/conectando.png';
