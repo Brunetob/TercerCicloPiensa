@@ -33,10 +33,3 @@ function App() {
 }
 
 export default App;
-
-
-/*
-Profe marco, buenas noches, disculpe que le moleste, le escribo para hacerle una consulta:
-
-Estoy intentando consumir la api del proyecto del piensa pero estoy teniendo problemas de cors, tomando como referencia proyectos anteriores e investigando pues en mi paquete config, creee una clase para el manejo de cors pero
-*/
