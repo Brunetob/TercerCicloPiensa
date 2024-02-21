@@ -9,24 +9,6 @@ import './App.css';
 function App() {
   return (
     <>
-      {/*<div className="container">
-        <div className="section">
-          <h1 className="welcome-text">BIENVENIDOS</h1>
-          <img className="logo" src={iconoApp} alt="Vite logo" />
-          <div className="goal_container">
-            <p className="goal-text">GOL</p>
-            <p className="goal-text">NO GOL?</p>
-          </div>
-          <p className="description-text">
-            Esta aplicación lleva el conteo de los goles anotados en un arco especial para personas con discapacidad visual
-          </p>
-        </div>
-        <div className='bottom'>
-          <img style={{width: '30%'}} src={conectando} alt="conectando" />
-          <button className="begin-button">INICIEMOS</button>
-          <Link to="/visualizar-goles" className="begin-button">INICIEMOS</Link>
-        </div>
-  </div>*/}
     <Router>
       <div className="container">
         <div className="section">
